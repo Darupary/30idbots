@@ -1446,7 +1446,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n*ping\n*restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n*bio\n*join\n*pjoin\n*leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n*delayspam\n*bigspam\n*raid\n*replyraid\n*dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = "⚜️ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 ⚜️\n\n💢 𝗨𝗧𝗜𝗟𝗦 💢:\n*ping\n*restart\n\n🔰 𝗨𝗦𝗘𝗥 𝗕𝗢𝗧 🔰:\n*join\n*pjoin\n*leave\n\n💥 𝗦𝗣𝗔𝗠 💥:\n*bigspam\n\n\nMᴏʀᴇ Pʟᴜɢɪɴs Cᴏᴍɪɴɢ Sᴏᴏɴ"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
