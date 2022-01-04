@@ -1446,7 +1446,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "🤖 Cᴏᴍᴍᴀɴᴅs Aᴄᴄᴏʀᴅɪɴɢ Tᴏ Yᴏᴜʀ Gɪᴠᴇɴ Tᴇʟᴇᴛʜᴏɴ Sᴛʀɪɴɢ 🤖\n\n\n*ping\n*restart\n*join\n*pjoin\n*leave\n*bigspam\n\n\nMᴏʀᴇ Pʟᴜɢɪɴs Cᴏᴍɪɴɢ Sᴏᴏɴ"
+       text = "Aʟʟ Cᴏᴍᴍᴀɴᴅs ™️\n\n\n*ping\n*restart\n*join\n*pjoin\n*leave\n*bigspam\n\n\nMᴏʀᴇ Pʟᴜɢɪɴs Cᴏᴍɪɴɢ Sᴏᴏɴ"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
