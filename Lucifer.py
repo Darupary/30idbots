@@ -1053,7 +1053,7 @@ async def spam(e):
                 caption = f"{username} {reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.1)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
           
