@@ -1208,48 +1208,16 @@ async def _(e):
 
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@eag.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@gle.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@wal.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@aaa.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-@boy.on(events.NewMessage(incoming=True, pattern=r"\*bigspam"))
-
-
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+            return await e.reply(usage, parse_mode=None, link_preview=None)
+        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(yukki) == 2:
-            message = str(yukki[1])
-            counter = int(yukki[0])
+        if len(Ustad) == 2:
+            message = str(Ustad[1])
+            counter = int(Ustad[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -1257,22 +1225,22 @@ async def spam(e):
                     else:
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.1)
-        elif e.reply_to_msg_id and smex.media:  
-            counter = int(yukki[0])
+        elif e.reply_to_msg_id and smex.media:
+            counter = int(Ustad[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
-                    await gifspam(e, smex) 
-                await asyncio.sleep(0.1)  
+                    await gifspam(e, smex)
+                await asyncio.sleep(0.1)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(yukki[0])
+            counter = int(Ustad[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.1)
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+            await e.reply(usage, parse_mode=None, link_preview=None)
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\*ping"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\*ping"))
