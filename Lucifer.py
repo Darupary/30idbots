@@ -988,6 +988,75 @@ async def gifspam(e, smex):
     except Exception as e:
         pass
 
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.scrap"))
+
+async def get_users(event):
+    sender = await event.get_sender()
+    me = await event.client.get_me()
+    if not sender.id == me.id:
+        hell = await eor(event, "`processing...`")
+    else:
+        hell = await eor(event, "`processing...`")
+    he_ll = event.pattern_match.group(1)
+    if he_ll == "@HellBot_Chat":
+        return await hell.edit("Restricted to invite users from there.")
+    elif he_ll == "@hellbot_chat":
+        return await hell.edit("Restricted to invite users from there.")
+    elif he_ll == "@HELLBOT_CHAT":
+        return await hell.edit("Restricted to invite users from there.")
+    kraken = await get_chatinfo(event)
+    chat = await event.get_chat()
+    if event.is_private:
+        return await hell.edit("`Sorry, Cant add users here`")
+    s = 0
+    f = 0
+    error = "None"
+
+    await hell.edit("**INVITING USERS !!**")
+    async for user in event.client.iter_participants(kraken.full_chat.id):
+        try:
+            if error.startswith("Too"):
+                return await hell.edit(
+                    f"**INVITING FINISHED !**\n\n**Error :** \n`{error}`\n\n**Invited :**  `{s}` users. \n**Failed to Invite :** `{f}` users."
+                )
+            await event.client(
+                functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
+            )
+            s = s + 1
+            await hell.edit(
+                f"**INVITING USERS.. **\n\n**Invited :**  `{s}` users \n**Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+            )
+        except Exception as e:
+            error = str(e)
+            f = f + 1
+    return await hell.edit(
+        f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
+    
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\*raid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\*raid"))
@@ -1098,7 +1167,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Succesfully Joined")
+                await event.edit("Join hogya sir 💥")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1146,7 +1215,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Succesfully Joined")
+                await event.edit("Join hogya sir 💥")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1196,7 +1265,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
+                await event.edit("Left")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1269,7 +1338,7 @@ async def spam(e):
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.1)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
@@ -1311,7 +1380,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"⚜️ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           𝙏𝙃𝙀 ♕︎ 𝙂𝙊𝘿𝙎 ♕︎ 𝙊𝙋")
+        await event.edit(f"⚜️ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           ")
 
 
         
@@ -1349,7 +1418,7 @@ async def ping(e):
 @boy.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "2𝙈𝙞𝙣 𝙍𝙪𝙠 𝙅𝙖 𝘽𝙨𝙙𝙠\n\nPlease wait till it reboots..."
+        text = "2 Min ke baad ping krna\n\nNahi toh maa xhuda 🤣"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
@@ -1512,7 +1581,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "Aʟʟ Cᴏᴍᴍᴀɴᴅs ™️\n\n\n*ping\n*restart\n*join\n*pjoin\n*leave\n*bigspam\n\n\nMᴏʀᴇ Pʟᴜɢɪɴs Cᴏᴍɪɴɢ Sᴏᴏɴ"
+       text = "GAAMD DEDO VAIIYA 🥺"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
