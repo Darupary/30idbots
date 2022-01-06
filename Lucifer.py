@@ -1312,7 +1312,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"⚜️ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           ")
+        await event.edit(f"⚜️ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           ♕︎ 𝘼𝙍𝙆𝙃𝘼𝙈𝙭𝙂𝙊𝘿𝙎 ♕︎ ")
 
 
         
@@ -1513,7 +1513,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "GAAMD DEDO VAIIYA 🥺"
+       text = "NO COMMANDS SAR 🥺💥"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
