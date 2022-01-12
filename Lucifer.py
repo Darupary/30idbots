@@ -1099,7 +1099,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Join hogya sir 💥")
+                await event.edit("Join hogya mam 💥")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1147,7 +1147,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Join hogya sir 💥")
+                await event.edit("Join hogya mam 💥")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1307,11 +1307,11 @@ async def spam(e):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "𝙏𝙃𝙀 ✘ 𝙂𝙊𝘿𝙎!"
+        text = "😵💞"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"⚜️ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           ♕︎ 𝘼𝙍𝙆𝙃𝘼𝙈𝙭𝙂𝙊𝘿𝙎 ♕︎ ")
+        await event.edit(f"⚜️ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           ♔︎ 𝙎𝙀𝙓𝙔𝙭𝙎𝙋𝘼𝙈 ♔︎ ")
 
 
         
@@ -1349,7 +1349,7 @@ async def ping(e):
 @boy.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "2 Min ke baad ping krna\n\nNahi toh maa xhuda 🤣"
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙...\n\nPing after 69 mins"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
@@ -1512,7 +1512,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "NO COMMANDS SAR 🥺💥"
+       text = "𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 😹👅\n»Pɪɴɢ\n»Rᴇsᴛᴀʀᴛ\n»Jᴏɪɴ\n»Lᴇᴀᴠᴇ\n»Pᴊᴏɪɴ\n»Bɪɢsᴘᴀᴍ\n»Rᴀɪᴅ\n\n\n\n       🍁"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
