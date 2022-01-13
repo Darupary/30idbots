@@ -1311,7 +1311,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"💋 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           ♔︎ 𝙎𝙀𝙓𝙔𝙭𝙎𝙋𝘼𝙈 ♔︎ ")
+        await event.edit(f"💋 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           #𝐀𝐫𝐮𝐧𝐎𝐩🥵🔥 ")
 
 
         
