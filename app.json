@@ -153,8 +153,8 @@
         "value": "",
         "required": false
       },
-      "STRING30": {
-        "description": "Telethon String Session",
+      "HEROKU_API_KEY": {
+        "description": "Api",
         "value": "",
         "required": false
       },
