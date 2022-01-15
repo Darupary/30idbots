@@ -990,6 +990,56 @@ async def gifspam(e, smex):
 
 
 
+ALIVE_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+import os
+lucifer = os.environ.get("ALIVE_PIC",None)
+if not lucifer:
+ vincenzo="https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+
+####
+async def alive(event):
+  if event.sender_id in SMEX_USERS:
+    sed = await event.client.get_me()
+    kk = sed.first_name
+    k = sed.id
+    s = f"[{kk}](tg://user?id={k})"
+    tf = f"""
+**꧁{s}꧂ ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ...
+ʀᴇᴘᴏ:- **[✦✧✧𝕍𝕀ℕℂ𝔼ℕℤ𝕆_𝕄𝕌𝕃𝕋𝕀_𝕊ℙ𝔸𝕄_𝔹𝕆𝕋✧✧✦](https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)**
+ᴛʏᴘᴇ `.help` ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ..
+................. ⎝╰‿╯⎠ ...................
+"""
+    await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
+import time
+from time import sleep
+
+
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
