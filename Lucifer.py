@@ -1360,7 +1360,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"⚡ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n          ♛ ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ ♛")
+        await event.edit(f"⚡ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n          🔥 ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ 🔥")
 
 
         
@@ -1398,7 +1398,7 @@ async def ping(e):
 @boy.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙...\n\nPing after 69 mins"
+        text = "ᎡᎬՏͲᎪᎡͲᎬᎠ...\n\nᏢᏆΝᏀ ᎪҒͲᎬᎡ 2 ᎷᏆΝ ✅"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
@@ -1561,7 +1561,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 😹👅\n»Pɪɴɢ\n»Rᴇsᴛᴀʀᴛ\n»Jᴏɪɴ\n»Lᴇᴀᴠᴇ\n»Pᴊᴏɪɴ\n»Bɪɢsᴘᴀᴍ\n»Rᴀɪᴅ\n\n\n\n       🍁"
+       text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n༒ᏢᏆΝᏀ\n༒ᎡᎬՏͲᎪᎡͲ\n༒ᎫϴᏆΝ\n༒ᏞᎬᎪᏙᎬ\n༒ᏢᎫϴᏆΝ\n»༒ᏴᏆᏀՏᏢᎪᎷ\n༒ᎡᎪᏆᎠ\n༒ᎡᎬᏢᏞᎽᎡᎪᏆᎠ\n༒ᎪᏞᏆᏙᎬ\n༒ᎪᎠᎠՏႮᎠϴ\n\n\n      ᏴᎽ ༒ ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ ༒"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
