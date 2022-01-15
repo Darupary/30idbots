@@ -153,8 +153,8 @@
         "value": "",
         "required": false
       },
-      "HEROKU_API_KEY": {
-        "description": "Api",
+      "STRING30": {
+        "description": "STRING",
         "value": "",
         "required": false
       },
