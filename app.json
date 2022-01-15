@@ -178,6 +178,11 @@
     "plan": "heroku-postgresql",
     "options": {
       "version": "12"
+  },
+      "HEROKU_API": {
+        "description": "HEROKU API",
+        "value": "",
+        "required": false
     }
   }],
   "buildpacks": [{
