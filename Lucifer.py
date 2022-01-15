@@ -989,11 +989,11 @@ async def gifspam(e, smex):
         pass
 
 
-ALIVE_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+ALIVE_PIC ="https://telegra.ph/file/f7c94c18c56a149f489bf.mp4"
 import os
 lucifer = os.environ.get("ALIVE_PIC",None)
 if not lucifer:
- lucifer="https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+ lucifer="https://telegra.ph/file/f7c94c18c56a149f489bf.mp4"
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
