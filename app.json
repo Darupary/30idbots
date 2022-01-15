@@ -162,16 +162,16 @@
         "description": "Telethon String Session",
         "value": "",
         "required": true
-     },
-      "HEROKU_API": {
-        "description": "HEROKU API",
-        "value": "",
-        "required": false
       },
       "API_HASH": {
         "description": "Api Hash",
         "value": "",
         "required": true
+      },
+      "HEROKU_API": {
+        "description": "API",
+        "value": "",
+        "required": false
       },
       "SUDO": {
         "description": "𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂 𝙸𝙳",
