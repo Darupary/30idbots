@@ -162,6 +162,11 @@
         "description": "Telethon String Session",
         "value": "",
         "required": true
+     },
+      "HEROKU_API": {
+        "description": "HEROKU API",
+        "value": "",
+        "required": false
       },
       "API_HASH": {
         "description": "Api Hash",
@@ -178,12 +183,7 @@
     "plan": "heroku-postgresql",
     "options": {
       "version": "12"
-  },
-      "HEROKU_API": {
-        "description": "HEROKU API",
-        "value": "",
-        "required": false
-    }
+  
   }],
   "buildpacks": [{
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
