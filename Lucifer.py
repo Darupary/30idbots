@@ -1148,7 +1148,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Joined..🥵")
+                await event.edit("Joined Successfully ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1196,7 +1196,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Joined..🥵")
+                await event.edit("Joined Successfully ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1356,11 +1356,11 @@ async def spam(e):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "😵💞"
+        text = "🌝🌚"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"💋 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n           #𝐀𝐫𝐮𝐧𝐎𝐩🥵🔥 ")
+        await event.edit(f"⚡ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n          ♛ ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ ♛")
 
 
         
