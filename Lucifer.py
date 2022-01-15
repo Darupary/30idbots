@@ -98,7 +98,7 @@ boy = ""
 que = {}
 
 SMEX_USERS = []
-for x in SUDO: 
+for x in SUDO_USERS: 
     SMEX_USERS.append(x)
     
 async def start_yukki():
