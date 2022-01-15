@@ -1105,6 +1105,166 @@ async def spam(e):
                     await asyncio.sleep(0.1)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
+
+@idk.on(events.NewMessage(incoming=True))
+@ydk.on(events.NewMessage(incoming=True))
+@wdk.on(events.NewMessage(incoming=True))
+@hdk.on(events.NewMessage(incoming=True))
+@sdk.on(events.NewMessage(incoming=True))
+@adk.on(events.NewMessage(incoming=True))
+@bdk.on(events.NewMessage(incoming=True))
+@cdk.on(events.NewMessage(incoming=True))
+@edk.on(events.NewMessage(incoming=True))
+@ddk.on(events.NewMessage(incoming=True))
+@vkk.on(events.NewMessage(incoming=True))
+@kkk.on(events.NewMessage(incoming=True))
+@lkk.on(events.NewMessage(incoming=True))
+@mkk.on(events.NewMessage(incoming=True))
+@sid.on(events.NewMessage(incoming=True))
+@shy.on(events.NewMessage(incoming=True))
+@aan.on(events.NewMessage(incoming=True))
+@ake.on(events.NewMessage(incoming=True))
+@eel.on(events.NewMessage(incoming=True))
+@khu.on(events.NewMessage(incoming=True))
+@shi.on(events.NewMessage(incoming=True))
+@yaa.on(events.NewMessage(incoming=True))
+@dav.on(events.NewMessage(incoming=True))
+@raj.on(events.NewMessage(incoming=True))
+@put.on(events.NewMessage(incoming=True))
+
+
+async def _(event):
+    global que
+    queue = que.get(event.sender_id)
+    if not queue:
+        return
+    async with event.client.action(event.chat_id, "typing"):
+        await asyncio.sleep(0.2)
+    async with event.client.action(event.chat_id, "typing"):
+        await event.client.send_message(
+            entity=event.chat_id,
+            message="""{}""".format(random.choice(RRAID)),
+            reply_to=event.message.id,
+        )           
+            
+            
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+
+
+async def _(e):
+    global que
+    usage = "**ACTIVATES REPLY RAID**\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None )
+        vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        smex = await e.get_reply_message()
+        if len(e.text) > 11:
+            message = str(vincenzo[0])
+            a = await e.client.get_entity(message)
+            g = a.id
+            que[g] = []
+            qeue = que.get(g)
+            appendable = [g]
+            qeue.append(appendable)
+            text = "ᎡႮᏦ ᎫᎪᎡᎪ ՏͲᎪᎡͲ Ꮋϴ ᎡᎻᎪ 🔥"
+            await e.reply(text, parse_mode=None, link_preview=None )
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            que[g] = []
+            qeue = que.get(g)
+            appendable = [g]
+            qeue.append(appendable)
+            text = "ҒႮᏟᏦᏆΝᏀ ՏͲᎪᎡͲᎬᎠ 🔥"
+            await e.reply(text, parse_mode=None, link_preview=None )
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
+
+            
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+
+async def _(e):
+    global que
+    usage = "DE-ACTIVATES REPLY RAID\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
+    if e.sender_id in SMEX_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None )
+        vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        smex = await e.get_reply_message()
+        if len(e.text) > 12:
+            message = str(vincenzo[0])
+            a = await e.client.get_entity(message)
+            g = a.id
+            try:
+                queue = que.get(g)
+                queue.pop(0)
+            except Exception as f:
+                pass
+            text = "ҒႮᏟᏦᏆΝᏀ ᎠϴΝᎬ ✅"
+            await e.reply(text, parse_mode=None, link_preview=None )
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            try:
+                queue = que.get(g)
+                queue.pop(0)
+            except Exception as f:
+                pass
+            text = "ᏦᏆᎠ ҒႮᏟᏦᎬᎠ ՏႮᏟᎬՏՏҒႮᏞᏞᎽ 🌚🔥"
+            await e.reply(text, parse_mode=None, link_preview=None )
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
           
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
