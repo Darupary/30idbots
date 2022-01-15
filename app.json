@@ -1,6 +1,6 @@
 {
-  "name": "FS-MULTI-SPAM-BOT",
-  "description": "A POWERFULL AND FAST SPAM BOT @The_GodLucifer.",
+  "name": "Arkham-X-God-MULTISPAM-BOT",
+  "description": "A POWERFULL AND FAST SPAM BOT BY @YashOP_XD and @xGODLUCIFER .",
   "logo": "",
   "keywords": [
     "spambot",
@@ -11,7 +11,7 @@
       "STRING": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING2": {
         "description": "Telethon String Session",
@@ -170,7 +170,7 @@
       },
       "SUDO": {
         "description": "𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂 𝙸𝙳",
-        "value": "5046719296",
+        "value": "1693752959",
         "required": true
       }
   },
@@ -178,7 +178,7 @@
     "plan": "heroku-postgresql",
     "options": {
       "version": "12"
-  
+    }
   }],
   "buildpacks": [{
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
