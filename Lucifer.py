@@ -1030,11 +1030,11 @@ async def alive(event):
     s = f"[{kk}](tg://user?id={k})"
     tf = f"""
 **꧁{s}꧂ ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ...
-ʀᴇᴘᴏ:- **[✦✧✧𝕍𝕀ℕℂ𝔼ℕℤ𝕆_𝕄𝕌𝕃𝕋𝕀_𝕊ℙ𝔸𝕄_𝔹𝕆𝕋✧✧✦](https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)**
+ʀᴇᴘᴏ:- **[✦✧✧𝕍𝕀ℕℂ𝔼ℕℤ𝕆_𝕄𝕌𝕃𝕋𝕀_𝕊ℙ𝔸𝕄_𝔹𝕆𝕋(lol.com)**
 ᴛʏᴘᴇ `.help` ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ..
 ................. ⎝╰‿╯⎠ ...................
 """
-    await event.client.send_file(event.chat_id,vincenzo,caption=tf, force_document=False, link_preview=False)
+    await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
 import time
 from time import sleep    
 
