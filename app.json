@@ -168,7 +168,7 @@
         "value": "",
         "required": true
       },
-      "SUDO": {
+      "SUDO_USERS": {
         "description": "𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂 𝙸𝙳",
         "value": "1693752959",
         "required": true
