@@ -168,11 +168,6 @@
         "value": "",
         "required": true
       },
-      "HEROKU_API": {
-        "description": "API",
-        "value": "",
-        "required": false
-      },
       "SUDO": {
         "description": "𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂 𝙸𝙳",
         "value": "5046719296",
