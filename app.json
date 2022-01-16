@@ -157,6 +157,11 @@
         "description": "STRING",
         "value": "",
         "required": false
+     },
+      "CMD_HNDLR": {
+        "description": "Don't change Kid",
+        "value": ".",
+        "required": true
       },
       "HEROKU_API_KEY": {
         "description": "API KEY OF YOUR HEROKU ID",
