@@ -1723,7 +1723,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n༒ᏢᏆΝᏀ\n༒ᎡᎬՏͲᎪᎡͲ\n༒ᎫϴᏆΝ\n༒ᏞᎬᎪᏙᎬ\n༒ᏢᎫϴᏆΝ\n»༒ᏴᏆᏀՏᏢᎪᎷ\n༒ᎡᎪᏆᎠ\n༒ᎡᎬᏢᏞᎽᎡᎪᏆᎠ\n༒ᎪᏞᏆᏙᎬ\n༒ᎪᎠᎠՏႮᎠϴ\n\n\n      ᏴᎽ ༒ ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ ༒"
+       text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n༒ᏢᏆΝᏀ\n༒ᎡᎬՏͲᎪᎡͲ\n༒ᎫϴᏆΝ\n༒ᏞᎬᎪᏙᎬ\n༒ᏢᎫϴᏆΝ\n༒ᏴᏆᏀՏᏢᎪᎷ\n༒ᎡᎪᏆᎠ\n༒ᎡᎬᏢᏞᎽᎡᎪᏆᎠ\n༒ᎪᏞᏆᏙᎬ\n༒ᎪᎠᎠՏႮᎠϴ\n\n\n      ᏴᎽ ༒ ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ ༒"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
