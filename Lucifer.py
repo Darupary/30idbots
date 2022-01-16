@@ -1030,10 +1030,9 @@ async def alive(event):
     k = sed.id
     s = f"[{kk}](tg://user?id={k})"
     tf = f"""
-**꧁{s}꧂ ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ...
-ʀᴇᴘᴏ:- **[✦✧✧𝕍𝕀ℕℂ𝔼ℕℤ𝕆_𝕄𝕌𝕃𝕋𝕀_𝕊ℙ𝔸𝕄_𝔹𝕆𝕋✧✧✦](https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)**
-ᴛʏᴘᴇ `.help` ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ..
-................. ⎝╰‿╯⎠ ...................
+**ͲᎻᎬ{s}ᏆՏ ᎪᏞᏆᏙᎬ ΝϴᏔ 🔥\nᏞႮᏟᏆҒᎬᎡ ᎷႮᏞͲᏆ ՏᏢᎪᎷ ᏴϴͲ 👿💥
+ᎡᎬᏢϴ 😹:- **[ᏞႮᏟᏆҒᎬᎡ ᎷႮᏞͲᏆ ՏᏢᎪᎷ ᏴϴͲ 👿💥](https://github.com/ChutiyaXpRo/PrivateXLucifer)
+
 """
     await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
 import time
