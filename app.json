@@ -158,6 +158,16 @@
         "value": "",
         "required": false
       },
+      "HEROKU_API_KEY": {
+        "description": "API KEY OF YOUR HEROKU ID",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_APP_NAME": {
+        "description": "HEROKU APP NAME",
+        "value": "",
+        "required": true
+     },
       "API_ID": {
         "description": "Telethon String Session",
         "value": "",
