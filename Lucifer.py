@@ -1090,7 +1090,7 @@ async def spam(e):
                 caption = f"{username} {reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.0)
+                    await asyncio.sleep(0.1)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
@@ -1103,7 +1103,7 @@ async def spam(e):
                 caption = f"{username} {reply}"
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.0)
+                    await asyncio.sleep(0.1)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
@@ -1465,21 +1465,21 @@ async def spam(e):
                         await smex.reply(message)
                     else:
                         await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.0)
+                    await asyncio.sleep(0.1)
         elif e.reply_to_msg_id and smex.media:  
             counter = int(yukki[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
                     await gifspam(e, smex) 
-                await asyncio.sleep(0.0)  
+                await asyncio.sleep(0.1)  
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
             counter = int(yukki[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.0)
+                    await asyncio.sleep(0.1)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
@@ -1521,7 +1521,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"⚡ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n          🔥 ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ 🔥")
+        await event.edit(f"⚡ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n        🔥 ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ 🔥")
 
 
         
