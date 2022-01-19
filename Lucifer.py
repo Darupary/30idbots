@@ -990,11 +990,11 @@ async def gifspam(e, smex):
 
 
 
-ALIVE_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+ALIVE_PIC = "https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
 import os
 lucifer = os.environ.get("ALIVE_PIC",None)
 if not lucifer:
- vincenzo="https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+ vincenzo="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -1521,7 +1521,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"⚡ 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n        🔥 ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ 🔥")
+        await event.edit(f"💥 𝙋𝙊𝙉𝙂 !\n`{ms}` 𝗺𝘀\n        🔥 𝘽𝘼𝘼𝙋 𝙅𝙄 🔥")
 
 
         
