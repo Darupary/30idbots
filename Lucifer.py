@@ -1837,6 +1837,7 @@ async def get_users(event):
 
         
 text = """
+
 ⚜️ 𝗣𝗜𝗡𝗚 𝗞𝗥 𝗝𝗔𝗔𝗞𝗘 ⚜️
 💥𝗕𝗬 @The_GodLucifer 💥"""
 
