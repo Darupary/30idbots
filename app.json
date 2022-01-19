@@ -161,17 +161,17 @@
       "CMD_HNDLR": {
         "description": "Don't change Kid",
         "value": ".",
-        "required": true
+        "required": false
       },
       "HEROKU_API_KEY": {
         "description": "API KEY OF YOUR HEROKU ID",
         "value": "",
-        "required": true
+        "required": false
       },
       "HEROKU_APP_NAME": {
         "description": "HEROKU APP NAME",
         "value": "",
-        "required": true
+        "required": false
      },
       "API_ID": {
         "description": "Telethon String Session",
@@ -181,7 +181,7 @@
       "ALIVE_PIC": {
         "description": "ALIVE MEDIA",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH": {
         "description": "Api Hash",
