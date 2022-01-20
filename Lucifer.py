@@ -970,27 +970,6 @@ async def start_yukki():
             pass
                   
    
-loop = asyncio.get_event_loop()
-loop.run_until_complete(start_yukki())       
-
-async def gifspam(e, smex):
-    try:
-        await e.client(
-            functions.messages.SaveGifRequest(
-                id=types.InputDocument(
-                    id=sandy.media.document.id,
-                    access_hash=smex.media.document.access_hash,
-                    file_reference=smex.media.document.file_reference,
-                ),
-                unsave=True,
-            )
-        )
-    except Exception as e:
-        pass
-.else:
-            await e.reply(usage, parse_mode=None, link_preview=None )       
-
-# Porn Spam -----
 
 @SAM.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
 @SAM2.on(events.NewMessage(incoming=True, pattern=r"\%spornspam(?: |$)(.*)" % hl))
