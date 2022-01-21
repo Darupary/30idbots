@@ -62,7 +62,7 @@ thirty = STRING30
 
 
 
-loc = ""
+idk = ""
 ydk = ""
 wdk = ""
 sdk = ""
@@ -102,7 +102,7 @@ for x in SUDO_USERS:
     SMEX_USERS.append(x)
     
 async def start_yukki():
-    global loc
+    global idk
     global ydk
     global wdk
     global sdk
@@ -135,16 +135,16 @@ async def start_yukki():
     if smex:
         session_name = str(smex)
         print("String 1 Found")
-        loc = TelegramClient(StringSession(session_name), a, b)
+        idk = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 1")
-            await loc.start()
+            await idk.start()
             botme = await loc.get_me()
-            await loc(functions.channels.JoinChannelRequest(channel=""))
-            await loc(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
-            await loc(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
-            await loc(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
-            await loc(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
+            await idk(functions.channels.JoinChannelRequest(channel=""))
+            await idk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
+            await idk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
+            await idk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
+            await idk(functions.channels.JoinChannelRequest(channel="@ABOUT_HYPER"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -155,7 +155,7 @@ async def start_yukki():
         session_name = "startup"
         idk = TelegramClient(session_name, a, b)
         try:
-            await loc.start()
+            await idk.start()
         except Exception as e:
             pass
    
@@ -978,7 +978,7 @@ import os
 lucifer = os.environ.get("ALIVE_PIC",None)
 if not lucifer:
  lucifer ="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -1033,7 +1033,7 @@ from time import sleep
 
 
 
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
@@ -1100,7 +1100,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-@loc.on(events.NewMessage(incoming=True))
+@idk.on(events.NewMessage(incoming=True))
 @ydk.on(events.NewMessage(incoming=True))
 @wdk.on(events.NewMessage(incoming=True))
 @hdk.on(events.NewMessage(incoming=True))
@@ -1142,7 +1142,7 @@ async def _(event):
         )           
             
             
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
@@ -1201,7 +1201,7 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
             
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
@@ -1260,7 +1260,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
           
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
@@ -1308,7 +1308,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
@@ -1357,7 +1357,7 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
         
-@loc.on(events.NewMessage(incoming=True, pattern=r"\*leave"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\*leave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\*leave"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\*leave"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\*leave"))
@@ -1410,7 +1410,7 @@ async def _(e):
 
 
 
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
@@ -1476,7 +1476,7 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
@@ -1520,7 +1520,7 @@ async def ping(e):
         
         
 
-@loc.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
@@ -1555,7 +1555,7 @@ async def restart(e):
         text = "ᎡᎬՏͲᎪᎡͲᎬᎠ...\n\nᏢᏆΝᏀ ᎪҒͲᎬᎡ 2 ᎷᏆΝ ✅"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
-            await loc.disconnect()
+            await idk.disconnect()
         except Exception as e:
             pass
         try:
@@ -1682,7 +1682,7 @@ async def restart(e):
         
         
         
-@loc.on(events.NewMessage(incoming=True, pattern=r"\*help"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\*help"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\*help"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\*help"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\*help"))
@@ -1732,7 +1732,7 @@ print("")
 print("𝗦𝗣𝗔𝗠 𝗕𝗢𝗧 𝗥𝗘𝗔𝗗𝗬 𝗙𝗢𝗥 𝗨𝗦𝗘")
 if len(sys.argv) not in (1, 3, 4):
     try:
-        loc.disconnect()
+        idk.disconnect()
     except Exception as e:
         pass
     try:
@@ -1853,7 +1853,7 @@ if len(sys.argv) not in (1, 3, 4):
         pass
 else:
     try:
-        loc.run_until_disconnected()
+        idk.run_until_disconnected()
     except Exception as e:
         pass
     try:
