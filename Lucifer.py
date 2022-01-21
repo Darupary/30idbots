@@ -47,16 +47,16 @@ ninth = STRING9
 tenth = STRING_10
 
 
-idk = ""
-ydk = ""
-wdk = ""
-sdk = ""
-hdk = ""
-adk = ""
-bdk = ""
-cdk = ""
-edk = ""
-ddk = ""
+luc = ""
+luc2 = ""
+luc3 = ""
+luc4 = ""
+luc5 = ""
+luc6 = ""
+luc7 = ""
+luc8 = ""
+luc9 = ""
+luc10 = ""
 
 
 que = {}
@@ -67,67 +67,67 @@ for x in SUDO_USERS:
 
 
 async def start_Ustad():
-    global idk
-    global ydk
-    global wdk
-    global sdk
-    global hdk
-    global adk
-    global bdk
-    global cdk
-    global ddk
-    global edk
+    global luc
+    global luc2
+    global luc3
+    global luc4
+    global luc5
+    global luc6
+    global luc7
+    global luc8
+    global luc9
+    global luc10
     if smex:
         session_name = str(smex)
         print("String 1 Found")
-        idk = TelegramClient(StringSession(session_name), a, b)
+        luc = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 1")
-            await idk.start()
-            botme = await idk.get_me()
+            await luc.start()
+            botme = await luc.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
-            idk = "smex"
+            luc = "smex"
             print(e)
     else:
         print("Session 1 not Found")
-        session_name = "startup"
-        idk = TelegramClient(session_name, a, b)
+        session_name = "LuciXSpam"
+        luc = TelegramClient(session_name, a, b)
         try:
-            await idk.start()
+            await luc.start()
         except Exception:
             pass
 
     if smexx:
         session_name = str(smexx)
         print("String 2 Found")
-        ydk = TelegramClient(StringSession(session_name), a, b)
+        luc2 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 2")
-            await ydk.start()
-            botme = await ydk.get_me()
+            await .start()
+            botme = await luc2.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
             print(e)
     else:
         print("Session 2 not Found")
-        session_name = "startup"
-        ydk = TelegramClient(session_name, a, b)
+        session_name = "LuciXSpam"
+        luc2 = TelegramClient(session_name, a, b)
         try:
-            await ydk.start()
+            await luc2.start()
         except Exception:
             pass
 
     if smexxx:
         session_name = str(smexxx)
         print("String 3 Found")
-        wdk = TelegramClient(StringSession(session_name), a, b)
+        luc3 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 3")
-            await wdk.start()
-            botme = await wdk.get_me()
+            await luc3.start()
+            botme = await luc3.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -135,20 +135,20 @@ async def start_Ustad():
     else:
         print("Session 3 not Found")
         session_name = "startup"
-        wdk = TelegramClient(session_name, a, b)
+        luc3 = TelegramClient(session_name, a, b)
         try:
-            await wdk.start()
+            await luc3.start()
         except Exception:
             pass
 
     if smexxxx:
         session_name = str(smexxxx)
         print("String 4 Found")
-        hdk = TelegramClient(StringSession(session_name), a, b)
+        luc4 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 4")
-            await hdk.start()
-            botme = await hdk.get_me()
+            await luc4.start()
+            botme = await luc4.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -156,20 +156,20 @@ async def start_Ustad():
     else:
         print("Session 4 not Found")
         session_name = "startup"
-        hdk = TelegramClient(session_name, a, b)
+        luc4 = TelegramClient(session_name, a, b)
         try:
-            await hdk.start()
+            await luc4.start()
         except Exception:
             pass
 
     if smexxxxx:
         session_name = str(smexxxxx)
         print("String 5 Found")
-        sdk = TelegramClient(StringSession(session_name), a, b)
+        luc5 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 5")
-            await sdk.start()
-            botme = await sdk.get_me()
+            await luc5.start()
+            botme = await luc5.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -177,20 +177,20 @@ async def start_Ustad():
     else:
         print("Session 5 not Found")
         session_name = "startup"
-        sdk = TelegramClient(session_name, a, b)
+        luc5 = TelegramClient(session_name, a, b)
         try:
-            await sdk.start()
+            await luc5.start()
         except Exception:
             pass
 
     if sixth:
         session_name = str(sixth)
         print("String 6 Found")
-        adk = TelegramClient(StringSession(session_name), a, b)
+        luc6 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 6")
-            await adk.start()
-            botme = await adk.get_me()
+            await luc6.start()
+            botme = await luc6.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -198,20 +198,20 @@ async def start_Ustad():
     else:
         print("Session 6 not Found")
         session_name = "startup"
-        adk = TelegramClient(session_name, a, b)
+        luc6 = TelegramClient(session_name, a, b)
         try:
-            await adk.start()
+            await luc6.start()
         except Exception:
             pass
 
     if seven:
         session_name = str(seven)
         print("String 7 Found")
-        bdk = TelegramClient(StringSession(session_name), a, b)
+        luc7 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 7")
-            await bdk.start()
-            botme = await bdk.get_me()
+            await luc7.start()
+            botme = await luc7.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -219,20 +219,20 @@ async def start_Ustad():
     else:
         print("Session 7 not Found")
         session_name = "startup"
-        bdk = TelegramClient(session_name, a, b)
+        luc7 = TelegramClient(session_name, a, b)
         try:
-            await bdk.start()
+            await luc7.start()
         except Exception:
             pass
 
     if eight:
         session_name = str(eight)
         print("String 8 Found")
-        cdk = TelegramClient(StringSession(session_name), a, b)
+        luc8 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 8")
-            await cdk.start()
-            botme = await cdk.get_me()
+            await luc8.start()
+            botme = await luc8.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -240,20 +240,20 @@ async def start_Ustad():
     else:
         print("Session 8 not Found")
         session_name = "startup"
-        cdk = TelegramClient(session_name, a, b)
+        luc8 = TelegramClient(session_name, a, b)
         try:
-            await cdk.start()
+            await luc8.start()
         except Exception:
             pass
 
     if ninth:
         session_name = str(ninth)
         print("String 9 Found")
-        ddk = TelegramClient(StringSession(session_name), a, b)
+        luc9 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 9")
-            await ddk.start()
-            botme = await ddk.get_me()
+            await luc9.start()
+            botme = await luc9.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -261,20 +261,20 @@ async def start_Ustad():
     else:
         print("Session 9 not Found")
         session_name = "startup"
-        ddk = TelegramClient(session_name, a, b)
+        luc9 = TelegramClient(session_name, a, b)
         try:
-            await ddk.start()
+            await luc9.start()
         except Exception:
             pass
 
     if tenth:
         session_name = str(tenth)
         print("String 10 Found")
-        edk = TelegramClient(StringSession(session_name), a, b)
+        luc10 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 10")
-            await edk.start()
-            botme = await edk.get_me()
+            await luc10.start()
+            botme = await luc10.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -282,9 +282,9 @@ async def start_Ustad():
     else:
         print("Session 10 not Found")
         session_name = "startup"
-        edk = TelegramClient(session_name, a, b)
+        luc10 = TelegramClient(session_name, a, b)
         try:
-            await edk.start()
+            await luc10.start()
         except Exception:
             pass
 
@@ -313,16 +313,16 @@ import os
 lucifer = os.environ.get("ALIVE_PIC",None)
 if not lucifer:
  lucifer ="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 ####
 async def alive(event):
   if event.sender_id in SMEX_USERS:
@@ -351,16 +351,16 @@ from time import sleep
 
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
@@ -378,16 +378,16 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None)
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in SMEX_USERS:
@@ -405,9 +405,9 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None)
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @sdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
