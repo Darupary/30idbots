@@ -978,7 +978,7 @@ import os
 lucifer = os.environ.get("ALIVE_PIC",None)
 if not lucifer:
  lucifer ="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
