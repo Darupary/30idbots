@@ -969,69 +969,6 @@ async def start_yukki():
         except Exception as e:
             pass
                   
-   
-
-
-
-ALIVE_PIC = "https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
-import os
-lucifer = os.environ.get("ALIVE_PIC",None)
-if not lucifer:
- lucifer ="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
-
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-
-####
-async def alive(event):
-  if event.sender_id in SMEX_USERS:
-    sed = await event.client.get_me()
-    kk = sed.first_name
-    k = sed.id
-    s = f"[{kk}](tg://user?id={k})"
-    tf = f"""
-**╔══════ ▓▓ ࿇ - ࿇ ▓▓ ══════╗
-    ᎽϴႮᎡ ՏᏢᎪᎷ ᏴϴͲ ᏆՏ ᏔϴᎡᏦᏆΝᏀ 
-
-   ᏢᎽͲᎻϴΝ - 3.0
-   ͲᎬᏞᎬͲᎻϴΝ - 1.0
-   ᏢᏞႮᏀᏆΝՏ - 8 ϴҒ 8
-   ᎠᎬᏙՏ - **[ ᏃᎬᏢᎻᎽᎡ ] (https://t.me/Zephyr_Ownerr) 
-   ᎡᎬᏢϴ - ՏϴϴΝ 
-   ՏႮᏢᏢϴᎡͲ - **[ ҒᏆΝᎪᏞ ՏͲᎡᏆᏦᎬ](https://t.me/FinalStrikeOp)
-   ϴᏔΝᎬᎡ - **[ ᏞႮᏟᏆҒᎬᎡ ](https://t.me/FS_LUCIF3R)
-
-╚══════ ▓▓ ࿇ - ࿇ ▓▓ ══════╝     
-
-"""
-    await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
-import time
-from time import sleep
-
-
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
@@ -1514,10 +1451,67 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"𝙓𝙃𝙊𝘿𝙉𝙀 𝙆𝙀 𝙇𝙄𝙔𝙀 𝙏𝘼𝙔𝘼𝙍 𝙃𝙐 𝙑𝙍𝙊 🥵💥!\n`{ms}` 𝗺𝘀\n        🔥 𝘽𝘼𝘼𝙋 𝙅𝙄 🔥")
+        await event.edit(f"🔥😈 𝙁𝙄𝙉𝘼𝙇 𝙎𝙏𝙍𝙄𝙆𝙀 𝙊𝙋 😈🔥\n`{ms}` 𝗺𝘀\n      🔥 𝙕𝙀𝙋𝙃𝙔𝙍 & 𝘼𝙒𝙀𝙍𝙄𝙏𝙊 🔥 ")
 
 
-        
+
+ALIVE_PIC = "https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
+import os
+lucifer = os.environ.get("ALIVE_PIC",None)
+if not lucifer:
+ lucifer ="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+
+####
+async def alive(event):
+  if event.sender_id in SMEX_USERS:
+    sed = await event.client.get_me()
+    kk = sed.first_name
+    k = sed.id
+    s = f"[{kk}](tg://user?id={k})"
+    tf = f"""
+**╔══════ ▓▓ ࿇ - ࿇ ▓▓ ══════╗
+    ᎽϴႮᎡ ՏᏢᎪᎷ ᏴϴͲ ᏆՏ ᏔϴᎡᏦᏆΝᏀ 
+
+   ᏢᎽͲᎻϴΝ - 3.0
+   ͲᎬᏞᎬͲᎻϴΝ - 1.0
+   ᏢᏞႮᏀᏆΝՏ - 8 ϴҒ 8
+   ᎠᎬᏙՏ - **[ ᏃᎬᏢᎻᎽᎡ ] (https://t.me/Zephyr_Ownerr) 
+   ᎡᎬᏢϴ - ՏϴϴΝ 
+   ՏႮᏢᏢϴᎡͲ - **[ ҒᏆΝᎪᏞ ՏͲᎡᏆᏦᎬ](https://t.me/FinalStrikeOp)
+   ϴᏔΝᎬᎡ - **[ ᏞႮᏟᏆҒᎬᎡ ](https://t.me/FS_LUCIF3R)
+
+╚══════ ▓▓ ࿇ - ࿇ ▓▓ ══════╝     
+
+"""
+    await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
+import time
+from time import sleep     
         
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\*restart"))
