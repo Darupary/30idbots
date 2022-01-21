@@ -331,18 +331,16 @@ async def alive(event):
     k = sed.id
     s = f"[{kk}](tg://user?id={k})"
     tf = f"""
-**╔══════ ▓▓ ࿇ - ࿇ ▓▓ ══════╗
-    ᎽϴႮᎡ ՏᏢᎪᎷ ᏴϴͲ ᏆՏ ᏔϴᎡᏦᏆΝᏀ 
+**
+   ᎽϴႮᎡ ՏᏢᎪᎷ ᏴϴͲ ᏆՏ ᏔϴᎡᏦᏆΝᏀ 
 
    ᏢᎽͲᎻϴΝ - 3.0
    ͲᎬᏞᎬͲᎻϴΝ - 1.0
    ᏢᏞႮᏀᏆΝՏ - 8 ϴҒ 8
-   ᎠᎬᏙՏ - **[ ᏃᎬᏢᎻᎽᎡ ] (https://t.me/Zephyr_Ownerr) 
+   ᎠᎬᏙՏ - **[ ᏃᎬᏢᎻᎽᎡ ] (https://t.me/Zephyr_Ownerr)**
    ᎡᎬᏢϴ - ՏϴϴΝ 
-   ՏႮᏢᏢϴᎡͲ - **[ ҒᏆΝᎪᏞ ՏͲᎡᏆᏦᎬ](https://t.me/FinalStrikeOp)
-   ϴᏔΝᎬᎡ - **[ ᏞႮᏟᏆҒᎬᎡ ](https://t.me/FS_LUCIF3R)
-
-╚══════ ▓▓ ࿇ - ࿇ ▓▓ ══════╝     
+   ՏႮᏢᏢϴᎡͲ - **[ ҒᏆΝᎪᏞ ՏͲᎡᏆᏦᎬ](https://t.me/FinalStrikeOp)**
+   ϴᏔΝᎬᎡ - **[ ᏞႮᏟᏆҒᎬᎡ ](https://t.me/FS_LUCIF3R)**   
 
 """
     await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
