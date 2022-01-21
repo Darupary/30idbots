@@ -337,10 +337,10 @@ async def alive(event):
    ᏢᎽͲᎻϴΝ - 3.0
    ͲᎬᏞᎬͲᎻϴΝ - 1.0
    ᏢᏞႮᏀᏆΝՏ - 8 ϴҒ 8
-   ᎠᎬᏙՏ - [ ᏃᎬᏢᎻᎽᎡ ]{@Zephyr_Owner}
+   ᎠᎬᏙՏ - **[ ᏃᎬᏢᎻᎽᎡ ](https://t.me/Zephyr_Owner)
    ᎡᎬᏢϴ - ՏϴϴΝ 
-   ՏႮᏢᏢϴᎡͲ - [ ҒᏆΝᎪᏞ ՏͲᎡᏆᏦᎬ]{@FinalStrikeOp}
-   ϴᏔΝᎬᎡ - [ ᏞႮᏟᏆҒᎬᎡ ]{@FS_LUCIF3R}  
+   ՏႮᏢᏢϴᎡͲ - **[ ҒᏆΝᎪᏞ ՏͲᎡᏆᏦᎬ](https://t.me/FinalStrikeOp)
+   ϴᏔΝᎬᎡ - **[ ᏞႮᏟᏆҒᎬᎡ ](https://t.me/FS_LUCIF3R)
 
 """
     await event.client.send_file(event.chat_id,lucifer,caption=tf, force_document=False, link_preview=False)
