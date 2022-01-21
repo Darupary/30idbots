@@ -971,52 +971,7 @@ async def start_yukki():
                   
    
 
-@loc.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.pspam"))
-async def pspam(e):
-    if e.sender_id in SUDO_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(rizoel) == 1:
-            counter = int(rizoel[0])
-            if int(e.chat_id) in GROUP:
-                text = f"Sorry !! I can't spam here"
-                await e.reply(text, parse_mode=None, link_preview=None )
-            else:
-                 porrn = random.choice(PORMS)
-                 for _ in range(counter):
-                     async with e.client.action(e.chat_id, "document"):
-                         smex = await e.client.send_file(e.chat_id, porrn)
-                         await gifspam(e, smex) 
-                     await asyncio.sleep(0.2)
-        else:
-            usage = f"**MODULE NAME : PORN SPAM** \n\n command: `.pornspam <count>`"
-            await e.reply(usage, parse_mode=None, link_preview=None )
+
 
 ALIVE_PIC = "https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
 import os
