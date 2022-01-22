@@ -105,7 +105,7 @@ async def start_Ustad():
         luc2 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 2")
-            await .start()
+            await luc2.start()
             botme = await luc2.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
