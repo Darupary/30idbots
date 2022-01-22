@@ -1,42 +1,113 @@
-import os
-import sys
-import random
-import asyncio
-import telethon.utils
-from telethon.tl import functions
-from telethon import TelegramClient, events
-from telethon.sessions import StringSession
-from decouple import config
-from os import getenv
-import logging
-import time
-from telethon.tl.functions.messages import ImportChatInviteRequest
-
-
-logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
-                    level=logging.WARNING)
-
-#version
-
-luciferversion = "v2.0.1"
-
-#values
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-ALIVE_PIC = config("ALIVE_PIC", default=None)
-CMD_HNDLR = getenv("CMD_HNDLR", default=".")
-HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = config("HEROKU_API_KEY", None)
-STRING = config("STRING", default=None)
-STRING2 = config("STRING2", default=None)
-STRING3 = config("STRING3", default=None)
-STRING4 = config("STRING4", default=None)
-STRING5 = config("STRING5", default=None)
-STRING6 = config("STRING6", default=None)
-STRING7 = config("STRING7", default=None)
-STRING8 = config("STRING8", default=None)
-STRING9 = config("STRING9", default=None)
-STRING10 = config("STRING10", default=None)
-SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+{
+  "name": "Arkham-X-God-MULTISPAM-BOT",
+  "description": "A POWERFULL AND FAST SPAM BOT BY @YashOP_XD and @xGODLUCIFER .",
+  "logo": "",
+  "keywords": [
+    "spambot",
+    "telegram",
+    "userbot"
+  ],
+    "env": {
+      "STRING": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING2": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING3": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING4": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING5": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING6": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING7": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING8": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING9": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING10": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      
+     },
+      "CMD_HNDLR": {
+        "description": "Don't change Kid",
+        "value": ".",
+        "required": false
+      },
+      "HEROKU_API_KEY": {
+        "description": "API KEY OF YOUR HEROKU ID",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "HEROKU APP NAME",
+        "value": "",
+        "required": false
+     },
+      "API_ID": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": true
+      },
+      "ALIVE_PIC": {
+        "description": "ALIVE MEDIA",
+        "value": "",
+        "required": false
+      },
+      "API_HASH": {
+        "description": "Api Hash",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂 𝙸𝙳",
+        "value": "1693752959",
+        "required": true
+      }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    },
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
