@@ -67,7 +67,7 @@
         "value": "",
         "required": false
       },
-        "SUDO": {
+        "SUDO_USERS": {
         "description": "Sudo Users Id",
         "value": "",
         "required": true
