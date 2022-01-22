@@ -408,13 +408,13 @@ async def _(e):
 @luc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @luc2.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @luc3.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
@@ -432,117 +432,7 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
-#--------------------------
- 
-from telethon.tl.functions.channels import LeaveChannelRequest as leave
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.End"))
-async def f(event):
-    if event.sender_id in SMEX_USERS:
-       async for x in idk.iter_dialogs():
-         if x.is_group:
-           await idk(leave(x.id))           
-
-#------------------------
-
-
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
-    error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        smex = await e.get_reply_message()
-        if len(Ustad) == 2:
-            message = str(Ustad[1])
-            counter = int(Ustad[0])
-            if counter > 100:
-                return await e.reply(error, parse_mode=None, link_preview=None)
-            await asyncio.wait([e.respond(message) for i in range(counter)])
-        elif e.reply_to_msg_id and smex.media:
-            counter = int(Ustad[0])
-            if counter > 100:
-                return await e.reply(error, parse_mode=None, link_preview=None)
-            for _ in range(counter):
-                smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
-                await gifspam(e, smex)
-        elif e.reply_to_msg_id and smex.text:
-            message = smex.text
-            counter = int(Ustad[0])
-            if counter > 100:
-                return await e.reply(error, parse_mode=None, link_preview=None)
-            await asyncio.wait([e.respond(message) for i in range(counter)])
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
-
-
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        smex = await e.get_reply_message()
-        Ustad = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        Ustadsexy = Ustad[1:]
-        if len(Ustadsexy) == 2:
-            message = str(Ustadsexy[1])
-            counter = int(Ustadsexy[0])
-            sleeptime = float(Ustad[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    if e.reply_to_msg_id:
-                        await smex.reply(message)
-                    else:
-                        await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and smex.media:
-            counter = int(Ustadsexy[0])
-            sleeptime = float(Ustad[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "document"):
-                    smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
-                    await gifspam(e, smex)
-                await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and smex.text:
-            message = smex.text
-            counter = int(Ustadsexy[0])
-            sleeptime = float(Ustad[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
@@ -661,91 +551,6 @@ async def _(event):
             reply_to=event.message.id,
         )
 
-
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.eplyraid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
-async def _(e):
-    global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        await e.get_reply_message()
-        if len(e.text) > 11:
-            message = str(Ustad[0])
-            a = await e.client.get_entity(message)
-            g = a.id
-            que[g] = []
-            qeue = que.get(g)
-            appendable = [g]
-            qeue.append(appendable)
-            text = "Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
-        elif e.reply_to_msg_id:
-            a = await e.get_reply_message()
-            b = await e.client.get_entity(a.sender_id)
-            g = b.id
-            que[g] = []
-            qeue = que.get(g)
-            appendable = [g]
-            qeue.append(appendable)
-            text = "Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
-
-
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
-async def _(e):
-    global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        await e.get_reply_message()
-        if len(e.text) > 12:
-            message = str(Ustad[0])
-            a = await e.client.get_entity(message)
-            g = a.id
-            try:
-                queue = que.get(g)
-                queue.pop(0)
-            except Exception:
-                pass
-            text = "De-Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
-        elif e.reply_to_msg_id:
-            a = await e.get_reply_message()
-            b = await e.client.get_entity(a.sender_id)
-            g = b.id
-            try:
-                queue = que.get(g)
-                queue.pop(0)
-            except Exception:
-                pass
-            text = "De-Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
