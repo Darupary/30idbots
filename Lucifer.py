@@ -557,7 +557,7 @@ async def _(event):
 @luc2.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @luc3.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @luc4.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luv5.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luC5.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @luc6.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @luc7.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @luc8.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
