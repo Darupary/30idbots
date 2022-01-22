@@ -6,91 +6,70 @@
     "telegram",
     "userbot"
   ],
-    "env": {
-      "STRING": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING2": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING3": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING4": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING5": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING6": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING7": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING8": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING9": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING10": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      
-     },
-      "CMD_HNDLR": {
-        "description": "Don't change Kid",
-        "value": ".",
-        "required": false
-      },
-      "HEROKU_API_KEY": {
-        "description": "API KEY OF YOUR HEROKU ID",
-        "value": "",
-        "required": false
-      },
-      "HEROKU_APP_NAME": {
-        "description": "HEROKU APP NAME",
-        "value": "",
-        "required": false
-     },
-      "API_ID": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": true
-      },
-      "ALIVE_PIC": {
-        "description": "ALIVE MEDIA",
-        "value": "",
-        "required": false
-      },
+    "env": {      
       "API_HASH": {
         "description": "Api Hash",
         "value": "",
         "required": true
       },
-      "SUDO_USERS": {
-        "description": "𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁𝚂 𝙸𝙳",
-        "value": "1693752959",
+      "API_ID": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": true
+      },
+      "STRING": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING2": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING3": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING4": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING5": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING6": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING7": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING8": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING9": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+        "STRING10": {
+        "description": "Bot String Session",
+        "value": "",
+        "required": false
+      },
+        "SUDO": {
+        "description": "Sudo Users Id",
+        "value": "",
         "required": true
       }
   },
@@ -98,7 +77,7 @@
     "plan": "heroku-postgresql",
     "options": {
       "version": "12"
-    },
+    }
   }],
   "buildpacks": [{
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
