@@ -435,16 +435,16 @@ async def _(e):
 
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -479,16 +479,16 @@ async def spam(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -527,16 +527,16 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None)
 
 
-@idk.on(events.NewMessage(incoming=True))
-@ydk.on(events.NewMessage(incoming=True))
-@wdk.on(events.NewMessage(incoming=True))
-@hdk.on(events.NewMessage(incoming=True))
-@sdk.on(events.NewMessage(incoming=True))
-@adk.on(events.NewMessage(incoming=True))
-@bdk.on(events.NewMessage(incoming=True))
-@cdk.on(events.NewMessage(incoming=True))
-@edk.on(events.NewMessage(incoming=True))
-@ddk.on(events.NewMessage(incoming=True))
+@luc.on(events.NewMessage(incoming=True))
+@luc2.on(events.NewMessage(incoming=True))
+@luc3.on(events.NewMessage(incoming=True))
+@luc4.on(events.NewMessage(incoming=True))
+@luc5.on(events.NewMessage(incoming=True))
+@luc6.on(events.NewMessage(incoming=True))
+@luc7.on(events.NewMessage(incoming=True))
+@luc8.on(events.NewMessage(incoming=True))
+@luc9.on(events.NewMessage(incoming=True))
+@luc10.on(events.NewMessage(incoming=True))
 async def _(event):
     global que
     queue = que.get(event.sender_id)
@@ -553,16 +553,16 @@ async def _(event):
 
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luv5.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -573,16 +573,16 @@ async def ping(e):
         await event.edit(f"💫 𝗣𝗼𝗻𝗴!\n`{ms}` 𝗺𝘀\n   🔥 𝙕𝙀𝙋𝙃𝙔𝙍 & 𝘼𝙒𝙀𝙍𝙄𝙏𝙊 🔥")
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
@@ -631,129 +631,20 @@ async def restart(e):
         quit()
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
        text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n༒ᏢᏆΝᏀ\n༒ᎡᎬՏͲᎪᎡͲ\n༒ᎫϴᏆΝ\n༒ᏞᎬᎪᏙᎬ\n༒ᏢᎫϴᏆΝ\n༒ᏴᏆᏀՏᏢᎪᎷ\n༒ᎡᎪᏆᎠ\n༒ᎡᎬᏢᏞᎽᎡᎪᏆᎠ\n༒ᎪᏞᏆᏙᎬ\n༒ᎪᎠᎠՏႮᎠϴ\n\n\n      ᏴᎽ ༒ ᎪᎡႮΝ & ᏞႮᏟᏆҒᎬᎡ ༒"
        await e.reply(text, parse_mode=None, link_preview=None )
-
-# --------------------------------------------------------------------------------------------------------------------------------
-
-
-from telethon.errors import (
-    ChannelInvalidError,
-    ChannelPrivateError,
-    ChannelPublicGroupNaError,
-)
-from telethon.tl import functions
-from telethon.tl.functions.channels import GetFullChannelRequest
-from telethon.tl.functions.messages import GetFullChatRequest
-
-async def get_chatinfo(event):
-    chat = event.pattern_match.group(1)
-    chat_info = None
-    if chat:
-        try:
-            chat = int(chat)
-        except ValueError:
-            pass
-    if not chat:
-        if event.reply_to_msg_id:
-            replied_msg = await event.get_reply_message()
-            if replied_msg.fwd_from and replied_msg.fwd_from.channel_id is not None:
-                chat = replied_msg.fwd_from.channel_id
-        else:
-            chat = event.chat_id
-    try:
-        chat_info = await event.client(GetFullChatRequest(chat))
-    except:
-        try:
-            chat_info = await event.client(GetFullChannelRequest(chat))
-        except ChannelInvalidError:
-            await event.reply("`Invalid channel/group`")
-            return None
-        except ChannelPrivateError:
-            await event.reply(
-                "`This is a private channel/group or I am banned from there`"
-            )
-            return None
-        except ChannelPublicGroupNaError:
-            await event.reply("`Channel or supergroup doesn't exist`")
-            return None
-        except (TypeError, ValueError):
-            await event.reply("`Invalid channel/group`")
-            return None
-    return chat_info
-
-
-def user_full_name(user):
-    names = [user.first_name, user.last_name]
-    names = [i for i in list(names) if i]
-    full_name = " ".join(names)
-    return full_name
-
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-async def get_users(event):
-    sender = await event.get_sender()
-    me = await event.client.get_me()
-    if not sender.id == me.id:
-        hell = await eor(event, "`processing...`")
-    else:
-        hell = await eor(event, "`processing...`")
-    he_ll = event.pattern_match.group(1)
-    if he_ll == "@FinalStrikeOp":
-        return await hell.edit("Restricted to invite users from there.")
-    elif he_ll == "@FinalStrikeOp":
-        return await hell.edit("Restricted to invite users from there.")
-    elif he_ll == "@FinalStrikeOp":
-        return await hell.edit("Restricted to invite users from there.")
-    kraken = await get_chatinfo(event)
-    chat = await event.get_chat()
-    if event.is_private:
-        return await hell.edit("`Sorry, Cant add users here`")
-    s = 0
-    f = 0
-    error = "None"
-
-    await hell.edit("**INVITING USERS !!**")
-    async for user in event.client.iter_participants(kraken.full_chat.id):
-        try:
-            if error.startswith("Too"):
-                return await hell.edit(
-                    f"**INVITING FINISHED !**\n\n**Error :** \n`{error}`\n\n**Invited :**  `{s}` users. \n**Failed to Invite :** `{f}` users."
-                )
-            await event.client(
-                functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
-            )
-            s = s + 1
-            await hell.edit(
-                f"**INVITING USERS.. **\n\n**Invited :**  `{s}` users \n**Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
-            )
-        except Exception as e:
-            error = str(e)
-            f = f + 1
-    return await hell.edit(
-        f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
-    )
-
 
 
 
@@ -766,83 +657,83 @@ print(
 )
 if len(sys.argv) not in (1, 3, 4):
     try:
-        idk.disconnect()
+        luc.disconnect()
     except Exception:
         pass
     try:
-        ydk.disconnect()
+        luc2.disconnect()
     except Exception:
         pass
     try:
-        wdk.disconnect()
+        luc3.disconnect()
     except Exception:
         pass
     try:
-        hdk.disconnect()
+        luc4.disconnect()
     except Exception:
         pass
     try:
-        sdk.disconnect()
+        luc5.disconnect()
     except Exception:
         pass
     try:
-        adk.disconnect()
+        luc6.disconnect()
     except Exception:
         pass
     try:
-        bdk.disconnect()
+        luc7.disconnect()
     except Exception:
         pass
     try:
-        cdk.disconnect()
+        luc8.disconnect()
     except Exception:
         pass
     try:
-        edk.disconnect()
+        luc9.disconnect()
     except Exception:
         pass
     try:
-        ddk.disconnect()
+        luc10.disconnect()
     except Exception:
         pass
 else:
     try:
-        idk.run_until_disconnected()
+        luc.run_until_disconnected()
     except Exception:
         pass
     try:
-        ydk.run_until_disconnected()
+        luc2.run_until_disconnected()
     except Exception:
         pass
     try:
-        wdk.run_until_disconnected()
+        luc3.run_until_disconnected()
     except Exception:
         pass
     try:
-        hdk.run_until_disconnected()
+        luc4.run_until_disconnected()
     except Exception:
         pass
     try:
-        sdk.run_until_disconnected()
+        luc5.run_until_disconnected()
     except Exception:
         pass
     try:
-        adk.run_until_disconnected()
+        luc6.run_until_disconnected()
     except Exception:
         pass
     try:
-        bdk.run_until_disconnected()
+        luc7.run_until_disconnected()
     except Exception:
         pass
     try:
-        cdk.run_until_disconnected()
+        luc8.run_until_disconnected()
     except Exception:
         pass
     try:
-        edk.run_until_disconnected()
+        luc9.run_until_disconnected()
     except Exception:
         pass
     try:
-        ddk.run_until_disconnected()
+        luc10.run_until_disconnected()
     except Exception:
         pass
