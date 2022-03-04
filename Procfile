@@ -1,1 +1,1 @@
-worker: python3 Lucifer.py
+worker: python3 Nemesis.py
